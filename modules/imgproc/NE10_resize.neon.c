@@ -171,8 +171,8 @@ void ne10_img_vresize_linear_neon (const int** src, unsigned char* dst, const sh
 
         qT_0123 = vmulq_lane_s32 (qS0_0123, dBeta, 0);
         qT_4567 = vmulq_lane_s32 (qS0_4567, dBeta, 0);
-        qT_0123 = vmlaq_lane_s32 (qT_0123, qS1_0123, dBeta, 1);
-        qT_4567 = vmlaq_lane_s32 (qT_4567, qS1_4567, dBeta, 1);
+        // qT_0123 = vmlaq_lane_s32 (qT_0123, qS1_0123, dBeta, 1);
+        // qT_4567 = vmlaq_lane_s32 (qT_4567, qS1_4567, dBeta, 1);
 
         qT_0123 = vaddq_s32 (qT_0123, qDelta);
         qT_4567 = vaddq_s32 (qT_4567, qDelta);
@@ -206,8 +206,8 @@ void ne10_img_vresize_linear_neon (const int** src, unsigned char* dst, const sh
 
         qT_0123 = vmulq_lane_s32 (qS0_0123, dBeta, 0);
         qT_4567 = vmulq_lane_s32 (qS0_4567, dBeta, 0);
-        qT_0123 = vmlaq_lane_s32 (qT_0123, qS1_0123, dBeta, 1);
-        qT_4567 = vmlaq_lane_s32 (qT_4567, qS1_4567, dBeta, 1);
+        // qT_0123 = vmlaq_lane_s32 (qT_0123, qS1_0123, dBeta, 1);
+        // qT_4567 = vmlaq_lane_s32 (qT_4567, qS1_4567, dBeta, 1);
 
         qT_0123 = vaddq_s32 (qT_0123, qDelta);
         qT_4567 = vaddq_s32 (qT_4567, qDelta);

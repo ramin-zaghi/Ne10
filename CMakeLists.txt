@@ -89,6 +89,7 @@ if("${NE10_TARGET_ARCH}" STREQUAL "armv7")
     # Physics module has not been optimized for aarch64.
     option(NE10_ENABLE_PHYSICS "Build physics functionalities to NE10" ON)
 endif()
+option(NE10_ENABLE_MATH "Build math functionalities to NE10" ON)
 option(NE10_ENABLE_DSP "Build dsp functionalities to NE10" ON)
 option(NE10_ENABLE_IMGPROC "Build image processing functionalities to NE10" ON)
 
